@@ -1,0 +1,14 @@
+<!-- remember, the directive ngStyle is pretty useless on it's own
+    this is why we're using [property binding] on the directive
+
+    When using ngClass:
+         uses key value pairs to bind css class style (key) with certain properties (value)
+         in this example: we set up an ".online" css class, and say
+         "if serverStatus === 'online'(string), attach ths CSS style '.online' to this H1 HTML element"
+         thereby turning the text white when a server is 'online'.
+     -->
+<h1
+ [ngStyle]="{backgroundColor: getColor()}"
+ [ngClass]="{online: serverStatus === 'online'}">
+ {{ 'Sever' }} with ID {{ serverId }} is {{ getServerStatus() }}
+</h1>

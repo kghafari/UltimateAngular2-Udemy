@@ -1,0 +1,4 @@
+Typescript is run on components
+index.html is the main entry point
+from there, via the <app-root></app-root> tag, our components are dynamically injected into the HTML page
+
